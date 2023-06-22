@@ -157,7 +157,7 @@ button {
   font-family: EB Garamond, serif;
 }
 
-.steps p {
+.text1 p {
   font-style: italic;
   font-weight: 700;
   font-size: 24px;
@@ -165,14 +165,53 @@ button {
   color: var(--silver);
 }
 
-.steps h2 {
+.text1 h2 {
   font-size: 28px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--indigo);
   line-height: 36px;
   margin: 21px auto;
   font-family: Oswald, sefir;
+}
+
+.fon {
+  background-color: #253458;
+  min-width: 50vh;
+  min-height: 193.21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fon img {
+  width: 107px;
+  height: 107px;
+}
+
+.fon:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid var(--darkindigo);
+  position: relative;
+  transform: rotate(45deg);
+  top: 95px;
+  left: 56px;
+}
+
+.block {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 22px;
+}
+
+.block h2 {
+  margin-top: 14px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.5px;
+  color: var(--darkindigo);
 }
 
 @media screen and (min-width: 768px) {
@@ -181,5 +220,14 @@ button {
   }
   .firstscreen {
     padding: 70px 0;
+  }
+
+  .block_main {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fon {
+    min-width: 37vh;
   }
 }

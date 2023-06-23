@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --indigo: #34497c;
+  --lightblue: #4b69b1;
+  --silver: #585858;
+  --lightsilver: #828282;
+  --orange: #fba702;
+  --darkindigo: #253458;
+  --black: #000000;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  min-height: 100vh;
+  font-family: garamond, sans-serif;
+}
+
+.testimon_ph {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.testimon_text {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  color: var(--darkindigo);
+  margin-top: 30px;
+}
+
+.testimon_line {
+  text-align: center;
+}
+
+.but_text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  color: var(--darkindigo);
+  text-transform: uppercase;
+}
+
+/* VIDEOSECTION */
+
+.videosection {
+  min-height: 100vh;
+  font-family: EB garamond, sans-serif;
+}
+
+.videosection h2 {
+  font-family: Oswald sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--indigo);
+  margin-top: 20px;
+}
+
+.videosection p {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--silver);
+}
+
+.pho {
+  min-width: 50vh;
+}
+
+.pho img {
+  width: 100%;
+}
+
+ul {
+  list-style-image: url(/img/bul-list\ 1.png);
+}
+
+li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+/* SUBSCRIBE */
+
+.subscribe {
+}
+
+.subs_text {
+  font-family: EB garamond, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+.subs form {
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+}
+
+.subs input {
+  background-color: white;
+}
+
+.subs button {
+  background-color: #a86f00;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 540px) {
+  .testimon_text {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .but_text {
+    font-size: 25px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .but_text {
+    font-size: 20px;
+  }
+
+  ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  ul {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  ul {
+    text-align: center;
+    list-style-position: inside;
+    margin-top: 20px;
+  }
+}

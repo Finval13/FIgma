@@ -139,6 +139,8 @@ button {
 }
 .testimonials {
   background-image: url(../img/gg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .videosection {
 }
@@ -214,7 +216,36 @@ button {
   color: var(--darkindigo);
 }
 
-@media screen and (min-width: 768px) {
+/* GALLERY */
+
+.gallery {
+  min-height: 80vh;
+  text-align: center;
+  font-family: EB Garamond, serif;
+}
+
+.f2 {
+  background-color: white;
+}
+
+.f2:before {
+  border: 0;
+}
+
+.f2 img {
+  width: 50vh;
+  height: 30vh;
+  margin-bottom: 30px;
+}
+
+.b2 {
+  color: #c4c4c4;
+}
+
+@media screen and (min-width: 540px) {
+}
+
+@media screen and (max-width: 768px) {
   .logo {
     text-align: left;
   }
@@ -223,11 +254,28 @@ button {
   }
 
   .block_main {
-    gap: 20px;
+    gap: 30px;
+  }
+
+  .f2 img {
+    width: 50vh;
+    height: 30vh;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .block_main {
+    gap: 50px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .fon {
     min-width: 37vh;
+  }
+
+  .f2 img {
+    width: 35vh;
+    height: 25vh;
   }
 }
